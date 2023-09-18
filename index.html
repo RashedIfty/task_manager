@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Merriweather font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+        </header>
+        <main>
+            <div class="task-form">
+                <form id="task-form">
+                    <div class="form-group">
+                        <label for="task">Task Name:</label>
+                        <input type="text" id="task" class="form-control" placeholder="Add a new task" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="details">Task Details:</label>
+                        <textarea id="details" class="form-control" rows="3" placeholder="Task details"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Task Date:</label>
+                        <input type="date" id="date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="deadline">Task Deadline:</label>
+                        <input type="date" id="deadline" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Task</button>
+                </form>
+            </div>
+            <div class="task-list">
+                <ul id="task-list" class="list-group">
+                    <!-- Tasks will be added here -->
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Include custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

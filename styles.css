@@ -1,0 +1,47 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    font-family: 'Merriweather', serif; /* Use 'Merriweather' font for the entire body */
+    background-image: url('background.jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(211, 243, 248, 0.9); /* Semi-transparent white background */
+    border: 1px solid #24029e;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #343a40;
+}
+
+/* Rest of your existing CSS styles... */
+
+/* Responsive styles for screens smaller than 576px (mobile devices) */
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .task-form input[type="text"],
+    .task-form textarea,
+    .task-form input[type="date"] {
+        padding: 5px;
+        font-size: 14px;
+    }
+}
