@@ -1,10 +1,8 @@
-// script.js
-
-// Task list array with objects to store additional task details
 let tasks = [];
 
-// Function to render tasks
-function renderTasks() {
+
+function renderTasks() 
+{
     const taskList = document.getElementById('task-list');
     taskList.innerHTML = '';
     tasks.forEach((task, index) => {
