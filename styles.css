@@ -1,6 +1,4 @@
-/* styles.css */
 
-/* Global styles */
 body {
     font-family: 'Merriweather', serif; /* Use 'Merriweather' font for the entire body */
     background-image: url('background.jpg'); /* Replace with the path to your background image */
@@ -29,7 +27,6 @@ h1 {
     color: #343a40;
 }
 
-/* Rest of your existing CSS styles... */
 
 /* Responsive styles for screens smaller than 576px (mobile devices) */
 @media (max-width: 576px) {
